@@ -1,0 +1,37 @@
+.section { margin-bottom: 24px; }
+.sectionLabel { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
+.linkRow { display: flex; gap: 8px; align-items: center; }
+.linkInput {
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text2);
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.qrSection { text-align: center; margin-bottom: 24px; }
+.qrWrapper {
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  display: inline-block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.notice {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 14px 16px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+}

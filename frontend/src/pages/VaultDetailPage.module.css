@@ -1,0 +1,67 @@
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text3); margin-bottom: 24px; }
+.breadcrumb button { background: none; border: none; color: var(--text3); font-family: 'DM Mono', monospace; font-size: 13px; cursor: pointer; transition: color 0.2s; }
+.breadcrumb button:hover { color: var(--accent); }
+.breadcrumbCurrent { color: var(--text); }
+
+.vaultHeader {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.vaultHeaderIcon {
+  width: 60px; height: 60px;
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; flex-shrink: 0;
+}
+.headerPublic { background: rgba(92,252,142,0.08); }
+.headerPrivate { background: rgba(252,92,92,0.08); }
+
+.vaultHeaderInfo { flex: 1; }
+.vaultHeaderInfo h2 { font-size: 22px; margin-bottom: 6px; }
+.vaultHeaderInfo p { font-size: 13px; color: var(--text3); margin-bottom: 12px; }
+.vaultMeta { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.vaultHeaderActions { display: flex; gap: 8px; }
+
+.filesSection h3 { font-size: 18px; margin-bottom: 16px; }
+
+.fileList { display: flex; flex-direction: column; gap: 8px; }
+
+.fileItem {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s;
+  animation: fadeSlideUp 0.3s ease both;
+}
+.fileItem:hover { border-color: rgba(124,92,252,0.25); }
+
+.fileExt {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(124,92,252,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: var(--accent);
+  flex-shrink: 0;
+}
+
+.fileInfo { flex: 1; min-width: 0; }
+.fileName { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fileMeta { font-size: 11px; color: var(--text3); margin-top: 3px; }
+
+.fileActions { display: flex; gap: 6px; flex-shrink: 0; }
+
+@media (max-width: 600px) {
+  .fileItem { flex-wrap: wrap; }
+  .fileActions { width: 100%; }
+  .fileActions .btn { flex: 1; }
+}

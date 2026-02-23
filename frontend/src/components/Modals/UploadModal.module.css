@@ -1,0 +1,42 @@
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  background: var(--surface2);
+  position: relative;
+}
+.dropzone:hover, .dropzoneActive {
+  border-color: var(--accent);
+  background: rgba(124,92,252,0.04);
+}
+.dropIcon { font-size: 40px; display: block; margin-bottom: 12px; }
+.dropText { font-size: 14px; color: var(--text2); margin-bottom: 4px; }
+.dropSub { font-size: 12px; color: var(--text3); }
+
+.fileList { margin-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+.fileListHeader { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text3); padding: 0 2px; margin-bottom: 4px; }
+
+.fileItem {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.fileExt {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  background: rgba(124,92,252,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 700; color: var(--accent);
+  flex-shrink: 0;
+}
+.fileInfo { flex: 1; min-width: 0; }
+.fileName { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fileMeta { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+.progressSection { margin-top: 16px; }
+.progressLabel { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
