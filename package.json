@@ -1,0 +1,13 @@
+{
+  "name": "vault-this-file",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vault This File — File vaults with public/private access, QR codes, no sign-up to download.",
+  "scripts": {
+    "setup": "npm run install:frontend",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "vercel-build": "cd frontend && npm install && npm run build"
+  }
+}
