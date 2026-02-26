@@ -1,5 +1,4 @@
 # 🔐 Vault This File
-> "Totally not Google Drive" — A sarcastic reference from Voltees V
 
 A file locker/vault web app where anyone can **download** without an account, but **uploading requires a sign-in**. Create public or private vaults, share via link or QR code, and lock private vaults with a PIN/password.
 
